@@ -1,0 +1,73 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100italic,400|Raleway:100|Terminal+Dosis:400,200);
+
+
+*, html, body{
+	font: 12pt/14pt Tahoma;
+	margin: 0; padding: 0;
+}
+
+body{background: url("images/whitey.png") repeat left top;}
+
+.clear{clear: both;}
+
+i{font-family: monospace; font-size: 90%;}
+a, a:visited{color: #800;}
+a:hover{color:#C00;}
+
+/* main blocks */
+.divider{background: #333; height: 10px; margin: 0;}
+
+#logo{text-align: center; margin-bottom: 50px; margin-top: 20px;}
+
+#footer{height: 20px; margin-top: -20px; background: #333; color: #FFF;}
+#footer #info{text-align: right; font-size: 60%; font-family: Arial;}
+#footer #info a, #footer #info a:hover{font-size: 110%; color: #FFF;}
+
+
+/* main columns with informations */
+#content, ul.columns{
+	margin: 0 auto;
+	width: 1100px;
+	display: block;
+	margin-bottom: 90px;
+}
+
+
+ul.columns li{
+	float: left;
+	list-style: none;
+	margin: 10px;
+	padding-left: 60px;
+	border-left: #ccc dotted 2px;
+	min-height: 200px;
+}
+
+ul.columns li:nth-of-type(1){margin-left: 0px; border: none; padding-left: 0;}
+
+ul.columns.third-way li{width: 300px;}
+ul.columns.double-way li{width: 500px; border: none;}
+
+ul.columns li span, ul.columns li div, ul.columns li p{width: inherit; padding: 0 0 10px 0; }
+
+ul.columns li span, ul.columns li div, ul.columns li p, ul.columns li h1, ul.columns li h2{text-shadow: #F2F2F2 1px 1px 0px; }
+
+.code-inner{
+	overflow-x: scroll;
+	height: auto;
+	font-family: Courier;
+	font-size: 10pt;
+}
+
+
+/* headers */
+
+h1, h2{margin:0;}
+
+h1{font-family: 'Josefin Sans', sans-serif; font-weight: 200; font-size: 400%; color: #800; margin-bottom: 15px;}
+h2{font-family: 'Terminal Dosis', sans-serif; font-size: 200%; margin-bottom: 5px; margin-left: -10px; padding-top: 17px; padding-left: 60px; height: 50px;} 
+
+h2#windows{background: url("images/windows.png") no-repeat; padding-left: 65px;}
+h2#ubuntu{background: url("images/linux.png") no-repeat;}
+h2#macos{background: url("images/apple.png") no-repeat;}
+h2#map{background: url("images/map.png") no-repeat; padding-left: 90px;}
+h2#play{background: url("images/play.png") no-repeat;}
